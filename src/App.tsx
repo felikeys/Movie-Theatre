@@ -1,16 +1,12 @@
-import './App.css'
-import { Button } from "@/components/ui/button"
-import { useGetMovieListQuery } from './features/slice/api-slice';
+import { RouterProvider } from 'react-router-dom'
+import { router } from './components/routes'
 
 function App() {
-  const  {data: moviesList} = useGetMovieListQuery({});
+  
 
   
-console.log(moviesList)
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
