@@ -1,16 +1,15 @@
-import { FaBars, FaSearch } from "react-icons/fa"
-import { Input } from "../ui/input"
-import { DropDown } from "./shared/select"
+import { FaBars } from "react-icons/fa"
+import { Genre } from "./shared/genres"
+import AnimatedSearch from "./shared/search"
 
 const Header = () => {
   return (
-    <div className="bg-black w-full h-16 flex items-center justify-between">
+    <div className="bg-black w-full h-16 flex items-center justify-between px-9">
         <FaBars className="text-white cursor-pointer" size={20} />
             <div className="flex items-center bg-white w-64" >
-                <FaSearch className="text-neutral-200 cursor-pointer" size={20} />
-           <Input placeholder="Search..." />
+           <AnimatedSearch />
             </div>
-            <DropDown/>
+            <Genre/>
     </div>
   )
 }
