@@ -7,7 +7,7 @@ const MovieLists = () => {
     const {data: movieLists, isLoading} = useGetMoviesQuery({})
 
     return isLoading ? (
-        <div className="flex justify-center items-center">
+        <div className=" h-screen flex items-center justify-center">
           <Spinner />
         </div>
       ) : (
