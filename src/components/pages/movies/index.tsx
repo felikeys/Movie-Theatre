@@ -11,7 +11,7 @@ const MovieLists = () => {
           <Spinner />
         </div>
       ) : (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="bg-neutral-200 grid grid-cols-4 gap-4 px-5 py-5">
           {movieLists?.results.map((movie: MovieList) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

@@ -12,6 +12,12 @@ export const router = createBrowserRouter(
             }
             
         }}/>
+        <Route path="movie/:id" lazy={async () => {
+            return {
+                Component: (await import("@/components/pages/movies/detail")).default,
+            }
+            
+        }}/>
         </Route>
         </>
     )
